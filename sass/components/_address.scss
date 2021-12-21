@@ -1,0 +1,27 @@
+.address {
+  font-style: inherit;
+
+  &__text {
+    margin-bottom: 9px;
+
+    @include text($lh: 1.71);
+    color: #ffffff;
+  }
+}
+
+.address-list__link {
+  display: block;
+
+  @include text($lh: 1.71);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address-list__item:nth-child(1) {
+  margin-bottom: 9px;
+}

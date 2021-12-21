@@ -1,0 +1,43 @@
+.special {
+  padding-top: 0;
+
+  &__title {
+    @include text($fw: 700, $fs: 36px, $lh: 1.67);
+    text-align: center;
+    color: var(--second-title-color);
+
+    margin-bottom: 50px;
+  }
+}
+
+.special-list {
+  display: flex;
+
+  &__item {
+    flex-basis: calc(100% - (2 * 30px) / 4);
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__item-label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    @include text($fw: 700);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

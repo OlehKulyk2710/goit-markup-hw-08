@@ -1,0 +1,31 @@
+@import './base/normalize';
+@import './base/reset';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/vis-hidden';
+@import './base/outline';
+
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/button';
+@import './components/socials';
+@import './components/address';
+@import './components/subscribe';
+@import './components/work-card';
+@import './components/filter';
+@import './components/close-button';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/checkbox';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/specialization';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio-cards';
