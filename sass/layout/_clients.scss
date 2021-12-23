@@ -26,6 +26,8 @@
 }
 
 .clients-list {
+  margin-bottom: -10px;
+
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +44,7 @@
 
 .clients-list__item {
   height: 92px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 480px) {
     margin-right: 30px;

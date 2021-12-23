@@ -3,7 +3,7 @@
 }
 
 .socials__item {
-  width: 44px;
+  flex-basis: 44px;
   height: 44px;
 
   &:not(:last-child) {

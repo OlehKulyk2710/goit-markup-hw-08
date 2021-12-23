@@ -4,12 +4,14 @@
 }
 
 .footer__wrap {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+  }
+  // display: flex;
+  // align-items: baseline;
 }
 
 .footer__address-wrap {
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 
 .footer__logo {
