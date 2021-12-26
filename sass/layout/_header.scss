@@ -1,16 +1,30 @@
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
 }
 
 .logo__studio-header {
@@ -18,5 +32,7 @@
 }
 
 .header__nav {
-  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

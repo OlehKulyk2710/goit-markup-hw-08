@@ -1,6 +1,14 @@
 .checkbox {
-  width: 423px;
-  height: 24px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 423px;
+    height: 24px;
+  }
 }
 
 .checkbox__input {
@@ -15,10 +23,18 @@
 }
 
 .checkbox__label {
-  @include text($lh: 1.71);
-
   color: #757575;
   margin-left: 22px;
+
+  @include text($fs: 12px, $lh: 1.17);
+
+  @media screen and (max-width: 479px) {
+    @include text($fs: 11px, $lh: 1.17);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include text($lh: 1.71);
+  }
 }
 
 .checkbox__icon-border {
@@ -60,9 +76,18 @@
 }
 
 .checkbox__contract {
-  @include text($lh: 1.71);
+  @include text($fs: 12px, $lh: 1.17);
 
-  text-decoration-line: underline;
+  @media screen and (max-width: 479px) {
+    display: block;
+    margin-left: 22px;
+    @include text($fs: 11px, $lh: 1.17);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include text($lh: 1.71);
+  }
 
   color: var(--accent-color);
+  text-decoration-line: underline;
 }

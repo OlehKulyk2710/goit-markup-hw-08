@@ -1,5 +1,10 @@
 .logo {
   font-family: Raleway, sans-serif;
-  @include text($fw: 700, $fs: 26px, $lh: 1.19);
+
   color: var(--logo-main-color);
+  @include text($fw: 700, $fs: 24px, $lh: 1.17);
+
+  @media screen and (min-width: 1200px) {
+    @include text($fw: 700, $fs: 26px, $lh: 1.19);
+  }
 }
