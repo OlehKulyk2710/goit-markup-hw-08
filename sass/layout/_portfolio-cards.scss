@@ -1,7 +1,15 @@
 .cards {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .cards__filter {
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
