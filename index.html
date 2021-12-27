@@ -43,6 +43,52 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
+
+            <!-- Mobile-menu button -->
+            <button type="button" class="header_mob-btn" data-mobile-open>
+                <svg class='header__mob-icon' width="40" height="40">
+                    <use href='./images/icon.svg#icon-menu_40px'></use>
+                </svg>
+            </button>
+            
+            <!-- Mobile-menu -->
+            <div class="header__mob-menu mob-menu is-hidden" data-mobile>
+                <div class="mob-menu__container">
+                    <nav class="mob-menu__nav">
+                        <ul class="list mob-menu__nav-list">
+                            <li class="mob-menu__nav-item"><a href="/" class="link mob-menu__nav-link current">Студия</a></li>
+                            <li class="mob-menu__nav-item"><a href="./portfolio.html" class="link mob-menu__nav-link">Портфолио</a></li>
+                            <li class="mob-menu__nav-item"><a href="" class="link mob-menu__nav-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="mob-menu__wrap">
+                        <ul class="list mob-menu__contacts">
+                            <li class="mob-menu__contacts-item"><a href="tel:+380961111111" class="link mob-menu__contacts-link--tel">+38
+                                    096
+                                    111 11 11</a></li>
+                            <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
+                                    class="link link mob-menu__contacts-link--email">info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="list mob-menu__socials">
+                            <li class="mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Instagram</a><span
+                                    class="divider"></span></li>
+                            <li class="mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Twitter</a><span
+                                    class="divider"></span></li>
+                            <li class="mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Facebook</a><span
+                                    class="divider"></span></li>
+                            <li class="mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <!-- Mobile-menu close-button -->
+                    <button type="button" class="mob-menu__close-btn" data-mobile-close>
+                        <svg class="mob-menu__close-icon" width="40" height="40">
+                            <use href='./images/icon.svg#icon-close_40px'></use>
+                    </svg></button>
+                </div>
+                
+            </div>
+
         </div>
     </header>
 
@@ -497,6 +543,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile.js"></script>
 
 
 </body>
