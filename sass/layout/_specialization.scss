@@ -16,15 +16,12 @@
 
 .special-list {
   display: flex;
+  margin-right: -30px;
 
   &__item {
-    flex-basis: calc(100% - (2 * 30px) / 4);
+    flex-basis: calc(100% - (3 * 30px) / 3);
     margin-right: 30px;
     position: relative;
-
-    &:last-child {
-      margin-right: 0px;
-    }
   }
 
   &__item-label {
