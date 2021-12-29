@@ -21,7 +21,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      @include text($fw: 700, $fs: 36px, $lh: 1.67);
+      @include text($fw: 700, $fs: 36px, $lh: 1.17);
       margin-bottom: 50px;
     }
   }

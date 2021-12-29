@@ -1262,12 +1262,29 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header__container {
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
   }
 }
 
@@ -1278,6 +1295,12 @@ img {
 @media screen and (max-width: 767px) {
   .header__nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    margin-left: auto;
   }
 }
 
@@ -1586,7 +1609,7 @@ img {
   .team__title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
   }
@@ -1907,12 +1930,18 @@ img {
 }
 
 .cards__filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .cards__filter {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__filter {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
